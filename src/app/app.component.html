@@ -1,0 +1,25 @@
+<clr-main-container>
+	<clr-header>
+		<div class="branding">
+			<a href="#" class="nav-link">
+				<clr-icon shape="clarity-logo" class="is-inverse is-solid"></clr-icon>
+				<span class="title">Star Wars</span>
+      </a>
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+    <clr-vertical-nav>
+      <a clrVerticalNavLink routerLink="./people" routerLinkActive="active">
+          <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+          People
+      </a>
+      <a clrVerticalNavLink routerLink="./planets" routerLinkActive="active">
+          <clr-icon clrVerticalNavIcon shape="star"></clr-icon>
+          Planets
+      </a>
+  </clr-vertical-nav>
+  </div>
+</clr-main-container>
